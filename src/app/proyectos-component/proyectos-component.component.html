@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <br> 
+    <form action="">
+      <h2>Rellena los datos</h2>
+      <div class="mb-3 row">
+        <label for="nombre" class="col-sm-1 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+          <input id="nombre" class="form-control" type="text" name="nombre" value="" placeholder="Nombre"
+            [(ngModel)]="nombre">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="apellido" class="col-sm-1 col-form-label">Apellido</label>
+        <div class="col-sm-10">
+          <input id="apellido" class="form-control" type="text" name="apellido" value="" placeholder="Apellido"
+            [(ngModel)]="apellido">
+        </div>
+      </div>
+  
+      <div class="mb-3 row">
+        <label for="cargo" class="col-sm-1 col-form-label">Cargo</label>
+        <div class="col-sm-10">
+          <input id="cargo" class="form-control" type="text" name="cargo" value="" placeholder="Cargo"
+            [(ngModel)]="cargo">
+        </div>
+      </div>
+   
+      <div class="mb-3 row"> 
+        <label for="salario" class="col-sm-1 col-form-label">Salario</label>
+        <div class="col-sm-10">
+          <input id="salario" class="form-control" type="number" name="salario" value="" placeholder="Salario"
+            [(ngModel)]="salario">
+        </div>
+      </div>
+  
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <input class="btn btn-success" type="button" value="Agregar" (click)="agregarEmpleado()">
+      </div>
+    </form>
+  
+  
+</div>
+<div>
+
+
+
+    <button class="btn btn-primary" type="button" (click)="volverHome()">ir a Home</button>
+</div>

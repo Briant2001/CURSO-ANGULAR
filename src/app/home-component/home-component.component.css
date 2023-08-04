@@ -1,0 +1,9 @@
+th{
+    width: 100px;
+}
+
+.td-buttons{
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+}
